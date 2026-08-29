@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jon Damen</title>
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --paper: #fbfbfa;
+    --line: #e4e4e1;
+    --accent: #2b5fb3;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 12vh 24px 10vh;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.25em;
+  }
+
+  .role {
+    font-size: 1.05rem;
+    color: #555;
+    margin: 0 0 2.2em;
+  }
+
+  p {
+    font-size: 1.05rem;
+    margin: 0 0 1.4em;
+    max-width: 46ch;
+  }
+
+  .links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2.4em;
+    padding-top: 1.6em;
+    border-top: 1px solid var(--line);
+  }
+
+  a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 2px;
+    transition: border-color 0.15s ease, color 0.15s ease;
+  }
+
+  a:hover, a:focus-visible {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    a { transition: none; }
+  }
+
+  footer {
+    margin-top: 4em;
+    font-size: 0.85rem;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Jon Damen</h1>
+    <p class="role">Add a one-line description of what you do here.</p>
+
+    <p>
+      This is a starter page for jondamen.com. Replace this paragraph
+      with a short bio — a sentence or two about who you are, what
+      you're working on, or what people should know.
+    </p>
+
+    <nav class="links">
+      <a href="mailto:you@example.com">Email</a>
+      <a href="https://github.com/yourusername">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername">LinkedIn</a>
+    </nav>
+
+    <footer>&copy; 2026 Jon Damen</footer>
+  </div>
+</body>
+</html>
+
